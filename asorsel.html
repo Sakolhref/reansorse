@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,6 +12,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Hanuman:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./fontcss.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.3.2/dist/tailwind.min.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
+
 
 </head>
 <style>
@@ -36,7 +39,7 @@
             <ul class="flex space-x-4 text-sm"> 
                 <li><a class="items-center flex justify-center" href="./index.html">ទំព័រដើម</a></li>
                 <li><a class="items-center flex justify-center" href="./asorsel.html">អានរឿងអក្សរសិល្ប៍</a></li>
-                <li><a class="items-center flex justify-center" href="#services">ជំនួយគណិតវិទ្យា</a></li>
+                <li><a class="items-center flex justify-center" href="./math.html">ជំនួយគណិតវិទ្យា</a></li>
                 <li><a class="items-center flex justify-center" href="#contact">ទំនាក់ទំនង</a></li>
             </ul>
             </div>
@@ -61,17 +64,19 @@
       <div data-aos="fade-up" data-aos-duration="500" class="mt-4 flex flex-wrap justify-center gap-8">
         
         <!-- Card 1 -->
-        <a href="./1.html" class="border-2 border-gray-300 rounded-lg p-4 hanuman-regular w-80 h-[360px] flex flex-col">
-      <img src="./images/Kolab-Pailin-book-cover.jpg" alt="Kolab Pailin"
-          class="mx-auto mb-4 w-full h-48 object-cover rounded-md flex-shrink-0">
-      <div class="flex-grow">
-        <p>ឈ្មោះ​: កុលាប ប៉ៃលិន</p>
-        <p>អ្នកនិពន្ធ​: សុវណ្ណ រស្មី</p>
-        <p>ប្រភេទ​: រឿងអក្សរសិល្ប៍</p>
-        <p>ឆ្នាំ​: ១៩៣៦ ឬ ១៩៤៣</p>
-        <p>ID: 1</p>
-      </div>
-    </a>
+         <div class="transform hover:scale-105 transition-all ease-in-out duration-600">
+            <a href="./1.html" class="border-2 border-gray-300 rounded-lg p-4 hanuman-regular w-80 h-[360px] flex flex-col">
+              <img src="./images/Kolab-Pailin-book-cover.jpg" alt="Kolab Pailin"class="mx-auto mb-4 w-full h-48 object-cover rounded-md flex-shrink-0">
+          <div class="flex-grow">
+               <p>ឈ្មោះ​: កុលាប ប៉ៃលិន</p>
+               <p>អ្នកនិពន្ធ​: សុវណ្ណ រស្មី</p>
+               <p>ប្រភេទ​: រឿងអក្សរសិល្ប៍</p>
+               <p>ឆ្នាំ​: ១៩៣៦ ឬ ១៩៤៣</p>
+               <p>ID: 1</p>
+              </div>
+            </a>
+         </div>
+      
 
 
         <!-- Card 2 -->
@@ -85,6 +90,8 @@
         <p>ID: 1</p>
       </div>
     </a>
+
+    
 
 
         <!-- Add more cards here if needed -->
