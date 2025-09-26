@@ -318,10 +318,7 @@
 
                 
 <br><br><br>
-    <div class="flex justify-center">
-          <h1 class="koulen-regular text-2xl border ">Mnus pg kjel tver tor sorry phg.</h1>
-
-    </div>
+   
    
       <footer class=" mt-[200px] fixed rounded-lg bottom-0 left-0 w-full bg-white  text-gray-600 dark:text-gray-400 p-4 shadow-md">
       <div class="text-center  text-gray-500 text-sm ">
@@ -331,6 +328,12 @@
       </div>
       </footer>
     
+      <div class="flex justify-center">
+        <button id="btnshowimg" onclick="showimg()" class="mt-10 p-4 bg-blue-600 text-white rounded-lg hover:bg-blue-800 transition-all duration-300">
+          click me for a surprise!!! 😁
+        </button>
+        <img id="rivay" class="hidden" src="./images/rivay.jpg" alt="">
+      </div>
       
 
 
@@ -344,9 +347,19 @@
 
 <script>
 
+  const img = document.getElementById('rivay');
+const btnshowimg = document.getElementById('btnshowimg');
 
+function showimg() {
+  img.classList.remove('hidden');
+  btnshowimg.classList.add('hidden');
 
-
+  // Hide again after 0.5s
+  setTimeout(() => {
+    img.classList.add('hidden');
+    btnshowimg.classList.remove('hidden');
+  }, 200); // 200ms = 0.2 seconds
+}
 
  function showMore() {
     document.getElementById('btnShowMore').classList.add('hidden');
